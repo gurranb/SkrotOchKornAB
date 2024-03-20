@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skrot och Korn AB</title>
+  </head>
+  <body>
+    <div style="background-color: azure;">
+        <img src="images/officelogo.jpg" width="250" />
+        <br />
+        <a href="index.html">Startsidan</a>
+        <a href="products.html">Produkter</a>
+        <a href="contactus.html">Kontakta oss</a>
+        <a href="register.html">Kontaktformulär</a>
+        <a href="media.html">Media</a>
+    </div>
+    <div
+      style="
+        background-color: bisque;
+        margin: 10px;
+        padding: 20px;
+        width: fit-content;
+      "
+    >
+      <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=MailAdress" method="post">
+        <label for="name">Ditt namn</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="adress">Din adress</label><br />
+        <input type="text" id="adress" name="adress" /><br />
+        <label for="email">Din Email</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="phonenumber">Ditt telefonnummer</label><br />
+        <input type="tel" id="phonenumber" name="phonenumber" /><br /><br>
+        <input type="radio" name="private" id="private" />
+        <label for="private">Privat</label><br />
+        <input type="radio" name="business" id="business" />
+        <label for="business">Företag</label><br />
+        <p><u><b>Storlek på företaget</b></u></p>
+        <input type="radio" name="low" id="low" />
+        <label for="low">1-100 anställda</label><br />
+        <input type="radio" name="mid" id="mid" />
+        <label for="mid">101-1000 anställda</label><br />
+        <input type="radio" name="high" id="high" />
+        <label for="high">Mer än 1000 anställda</label><br><br>
+        <label for="info">Ställ frågor</label><br>
+        <textarea name="info" id="info" cols="50" rows="8"></textarea><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+        <input type="hidden" name="newsletter" id="newsletter" value="nej">
+        <label for="newsletter">Vill du ha nyhetsbrev?</label><br>
+        <input type="checkbox" id="contactphone" name="contactphone" value="yes">
+        <input type="hidden" id="contactphone" name="contactphone" value="no">
+        <label for="contactphone">Vill du bli kontaktad via telefon?</label><br><br>
+
+        <input type="submit" value="Skicka">
+
+      </form>
+    </div>
+    <div>
+        <iframe
+        src="contactinfo.html"
+        scrolling="no"
+        width="130"
+        height="180"
+        style="border: none"
+      ></iframe>
+    </div>
+  </body>
+</html>
