@@ -44,7 +44,7 @@ header {
     main {
         grid-template-columns: 1fr; /* Change main content layout to single column */
         padding: 10px; /* Adjust padding for main content */
-        overflow-x: hidden;
+        overflow-x: hidden; /* Hide horizontal overflow */
     }
 }
 
@@ -65,7 +65,12 @@ header {
     .officelogo {
         display: none; /* Hide office logo for smaller screens */
     }
+
+    main {
+        grid-template-columns: 1fr; /* Change main content layout to single column */
+    }
 }
+
 
 
 .logo {
