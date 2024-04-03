@@ -44,6 +44,7 @@ header {
     main {
         grid-template-columns: 1fr; /* Change main content layout to single column */
         padding: 10px; /* Adjust padding for main content */
+        overflow-x: hidden;
     }
 }
 
