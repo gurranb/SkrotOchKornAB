@@ -20,14 +20,52 @@ header {
 }
 
 
+/* For screens up to 768px wide (typical phone screens) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Adjust header padding for smaller screens */
+    }
 
+    .menu {
+        display: none; /* Hide menu items */
+    }
 
-@media (max-width: 1200px) {
-    
-    .menu li {
-        margin-right: 10px; 
+    .logo {
+        grid-column: 1 / span 3; /* Span the logo across the header */
+        text-align: center; /* Center align the logo */
+    }
+
+    .search {
+        grid-column: 4 / span 1; /* Adjust search position */
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Change main content layout to single column */
+        padding: 10px; /* Adjust padding for main content */
     }
 }
+
+/* Additional adjustments for smaller screens if needed */
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.5em; /* Adjust title font size for smaller screens */
+    }
+
+    .search input {
+        width: 70%; /* Adjust search input width */
+    }
+
+    .search button {
+        padding: 3px 6px; /* Adjust search button padding */
+    }
+
+    .officelogo {
+        display: none; /* Hide office logo for smaller screens */
+    }
+}
+
 
 .logo {
     grid-column: 1;
