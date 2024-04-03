@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skrot och Korn AB</title>
-  </head>
-  <body>
-    <div style="background-color: azure">
-      <img src="images/officelogo.jpg" width="250" />
-      <br />
-      <a href="index.html">Startsidan</a>
-      <a href="products.html">Produkter</a>
-      <a href="contactus.html">Kontakta oss</a>
-      <a href="register.html">Kontaktformulär</a>
-      <a href="media.html">Media</a>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1 class="title">Skrot och Korn AB</h1>
     </div>
-    <div style="background-color: rgba(112, 106, 148, 0.274); width: fit-content;">
-      <h1>Skrot och Korn AB</h1>
-      <h3>Vi erbjuder</h3>
-      <li>Traktorer</li>
-      <li>Reparation</li>
+    <img class="officelogo" src="images/tractorlogo.png" alt="Office Logo">
+    <div class="search">
+        <input type="text" placeholder="Sök...">
+        <button>Sök</button>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Startsidan</a></li>
+            <li><a href="products.html">Produkter</a></li>
+            <li><a href="contactus.html">Kontakta oss</a></li>
+            <li><a href="register.html">Kontaktformulär</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <h3>Om oss</h3>
-      <p>
-        Skrot och Korn AB är familjeföretag som grundades år 1962. <br />Vi
-        köper, säljer och servar begagnade traktorer till bra priser.
-      </p>
+<main class="grid-container">
+    <section class="main-content">
+        <h3>Vi erbjuder</h3>
+        <ul>
+            <li>Traktorer</li>
+            <li>Reparation</li>
+        </ul>
+        <h3>Om oss</h3>
+        <p>Skrot och Korn AB är ett familjeföretag som grundades år 1962. Vi köper, säljer och servar begagnade traktorer till bra priser.</p>
+    </section>
+</main>
+
+<aside>
+    <div class="info">
+        <h3>Miljöcertifiering</h3>
+        <p>Information om miljöcertifiering...</p>
     </div>
-    <iframe
-      src="contactinfo.html"
-      scrolling="no"
-      width="130"
-      height="180"
-      style="border: none;"
-    ></iframe>
-  </body>
+    <div class="ad">
+        <h3>Reklambanners</h3>
+        <!-- Reklambanners här -->
+    </div>
+    <div class="links">
+        <h3>Länkar</h3>
+        <ul>
+            <li><a href="#">Länk 1</a></li>
+            <li><a href="#">Länk 2</a></li>
+            <li><a href="#">Länk 3</a></li>
+        </ul>
+    </div>
+</aside>
+
+<footer>
+    <div class="contact">
+        <h3>Kontaktinformation</h3>
+        <p>Kontakta oss på 070-1234567</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Skrot och Korn AB. Alla rättigheter förbehållna.</p>
+    </div>
+</footer>
+</body>
 </html>

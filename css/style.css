@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-image: url("../images/fieldbackground.jpg");
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    border-bottom: 3px solid 	#000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:inherit;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    .logo, .menu, .search {
+        grid-column: auto; 
+    }
+
+    .officelogo {
+        width: 100%; 
+    }
+
+    .menu li {
+        display: block; 
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .menu li {
+        margin-right: 10px; 
+    }
+}
+
+.logo {
+    grid-column: 1;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-column: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: 	#000000;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.menu li a:hover {
+    color: #007bff;
+    background-color: #f2f2f2;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 5;
+    margin-top: 10px;
+}
+
+.search input {
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.officelogo {
+    width: 175px;
+    grid-column: 5;
+}
+
+.title {
+    margin: 0;
+    color: 	#000000;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 20%) minmax(200px, 20%) 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
